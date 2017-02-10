@@ -1,6 +1,7 @@
 #Create list of possible values (one for each student)
 #Each character 0-f represents 1-16 in hexadecimal
 l = list("0123456789abcdef")
+students = ['Jonathan Shaw','Todd Briley','Aaron White','Amos Gichero','Huiqi Zhou','Calder Marshall','Debra Mae Lee','Andreea Uta','Julie Dyer','Justin Uzoije','James Marion','Carl Severe','Ning Yuan','Steven Rodriguez','Blake Bagwell','Ian Price']
 
 #Create set of invalid pairs for error catching
 pair_errors = []
@@ -40,4 +41,13 @@ Which one would you like to use?
 Please enter an integer between 1 and 15, inclusive.\n
 """
 response = int(raw_input("Set #"))
-print sets[response-1]
+
+pair_set = sets[response-1]
+name_pairs = []
+
+for i in pair_set:
+    t = []
+    for j in i:
+        t.append(students[l.index(j)])
+    name_pairs.append(t)
+    print t
