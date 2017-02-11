@@ -78,8 +78,8 @@ for i in pair_set:
     name_pairs.append(t)
     print t
 
-#print "Are you done using the program?"
-#response2 = str(raw_input("(y/n):"))
+print "Are you done using the program?"
+response2 = str(raw_input("(y/n):"))
 output_string = ""
 response2 ="y"
 if response2 == "y":
